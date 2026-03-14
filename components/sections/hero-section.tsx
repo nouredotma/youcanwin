@@ -26,7 +26,7 @@ export function HeroSection() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <button className="bg-green-600 text-white px-8 py-4 font-bold rounded-md hover:bg-green-700 transition-all shadow-lg flex items-center justify-center gap-2">
+            <button className="bg-primary-gradient text-white px-8 py-4 font-bold rounded-md hover:opacity-90 transition-all shadow-lg flex items-center justify-center gap-2">
               Voir la démo
               <span className="text-xl leading-none">›</span>
             </button>
@@ -50,7 +50,7 @@ export function HeroSection() {
           {/* Mobile Device Mockup */}
           <div className="relative z-10 w-[300px] md:w-[350px] mx-auto h-[540px] md:h-[620px] border-[8px] border-gray-900 rounded-[50px] bg-white overflow-hidden shadow-xl flex flex-col">
             {/* Top Area (Header) - 22% */}
-            <div className="h-[25%] bg-green-600 p-6 flex flex-col justify-end text-white shrink-0 relative">
+            <div className="h-[25%] bg-primary-gradient p-6 flex flex-col justify-end text-white shrink-0 relative">
               {/* Notch */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-4 bg-gray-900 rounded-b-xl"></div>
               

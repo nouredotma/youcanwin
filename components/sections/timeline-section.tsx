@@ -26,7 +26,7 @@ export function TimelineSection() {
             return (
               <div key={i} className="relative flex flex-col items-center text-center group">
                 {/* Badge Number */}
-                <div className={`absolute top-0 right-4 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm text-white shadow-sm ${isRed ? 'bg-red-600' : 'bg-green-600'}`}>
+                <div className={`absolute top-0 right-4 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm text-white shadow-sm ${isRed ? 'bg-red-600' : 'bg-primary-gradient'}`}>
                   {i + 1}
                 </div>
                 

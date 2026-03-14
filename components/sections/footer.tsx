@@ -16,13 +16,13 @@ export function Footer() {
           {/* Logo & Social Column */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-green-600 p-2 rounded-md">
+              <div className="bg-primary-gradient p-2 rounded-md">
                 <Trophy className="w-5 h-5 text-white" />
               </div>
               <div className="text-2xl font-extrabold flex items-center">
                 <span className="text-red-600">You</span>
                 <span className="text-black">can</span>
-                <span className="text-green-600">win</span>
+                <span className="text-gradient">win</span>
               </div>
             </div>
             <p className="text-sm text-gray-500 mb-4 font-medium leading-relaxed">

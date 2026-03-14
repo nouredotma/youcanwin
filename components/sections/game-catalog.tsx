@@ -49,7 +49,7 @@ export function GameCatalog() {
                   alt={game.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-0 right-0 bg-green-600 px-4 py-1.5 rounded-bl-2xl font-black text-[10px] uppercase tracking-widest text-white shadow-sm">
+                <div className="absolute top-0 right-0 bg-primary-gradient px-4 py-1.5 rounded-bl-2xl font-black text-[10px] uppercase tracking-widest text-white shadow-sm">
                   {game.category}
                 </div>
               </div>
