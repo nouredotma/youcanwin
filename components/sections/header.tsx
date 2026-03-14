@@ -8,8 +8,8 @@ export function Header() {
           <div className="bg-green-600 p-2 rounded-md">
             <Trophy className="w-5 h-5 text-white" />
           </div>
-          <div className="text-2xl font-bold flex items-center">
-            <span className="text-red-600">U</span>
+          <div className="text-2xl font-extrabold flex items-center">
+            <span className="text-red-600">You</span>
             <span className="text-black">can</span>
             <span className="text-green-600">win</span>
           </div>

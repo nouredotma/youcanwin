@@ -1,12 +1,12 @@
-import { QrCode, UserCheck, PlayCircle, Trophy, BarChart3 } from "lucide-react";
+import { ShoppingBag, QrCode, Smartphone, LayoutGrid, Gift } from "lucide-react";
 
 export function TimelineSection() {
   const steps = [
-    { title: "Génération QR", desc: "Créez vos codes d'identification uniques", Icon: QrCode },
-    { title: "Activation Client", desc: "Le client scanne et active son profil", Icon: UserCheck },
-    { title: "Expérience Jeu", desc: "Accès instantané aux mini-jeux", Icon: PlayCircle },
-    { title: "Récompenses", desc: "Gagnez des points et des cadeaux", Icon: Trophy },
-    { title: "Statistiques", desc: "Suivez l'engagement en temps réel", Icon: BarChart3 },
+    { title: "Achat produit", desc: "Le client achète votre produit en magasin", Icon: ShoppingBag },
+    { title: "Scan QR Code", desc: "Il scanne le code sur l'emballage", Icon: QrCode },
+    { title: "Déblocage carte", desc: "Une carte digitale est débloquée", Icon: Smartphone },
+    { title: "Collection", desc: "Il complète sa collection", Icon: LayoutGrid },
+    { title: "Récompense", desc: "Participe au tirage", Icon: Gift },
   ];
 
   return (
@@ -17,29 +17,32 @@ export function TimelineSection() {
             Un parcours client simple et engageant
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Découvrez comment You can win transforme l'interaction avec vos produits en quelques étapes simples.
+            De rachat du produit à la récompense, en 5 étapes
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-          {steps.map((step, i) => (
-            <div key={i} className="relative bg-white p-8 rounded-2xl shadow-xl shadow-gray-100/50 flex flex-col items-center text-center group">
-              {/* Badge Number */}
-              <div className="absolute top-4 right-4 w-8 h-8 bg-green-50 text-green-600 rounded-full flex items-center justify-center font-bold text-sm">
-                0{i + 1}
-              </div>
-              
-              {/* Icon */}
-              <div className="w-16 h-16 bg-white border-2 border-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <step.Icon className="w-8 h-8 text-green-600" />
-              </div>
+          {steps.map((step, i) => {
+            const isRed = i >= 3; // Steps 4 and 5 are red
+            return (
+              <div key={i} className="relative flex flex-col items-center text-center group">
+                {/* Badge Number */}
+                <div className={`absolute top-0 right-4 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm text-white shadow-sm ${isRed ? 'bg-red-600' : 'bg-green-600'}`}>
+                  {i + 1}
+                </div>
+                
+                {/* Icon */}
+                <div className={`w-16 h-16 bg-white border-2 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${isRed ? 'border-red-100' : 'border-green-100'}`}>
+                  <step.Icon className={`w-8 h-8 ${isRed ? 'text-red-600' : 'text-green-600'}`} />
+                </div>
 
-              {/* Text */}
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed font-medium">
-                {step.desc}
-              </p>
-            </div>
-          ))}
+                {/* Text */}
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed font-medium">
+                  {step.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

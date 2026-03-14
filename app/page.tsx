@@ -9,6 +9,7 @@ import { GameCatalog } from "@/components/sections/game-catalog";
 import { StatsSection } from "@/components/sections/stats-section";
 import { RedCTASection } from "@/components/sections/red-cta-section";
 import { Footer } from "@/components/sections/footer";
+import { InfraStatsSection } from "@/components/sections/infra-stats-section";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <TimelineSection />
       <GreenFeatureSection />
       <FeatureGrid />
+      <InfraStatsSection />
       <PricingSection />
       <GameCatalog />
       <StatsSection />
