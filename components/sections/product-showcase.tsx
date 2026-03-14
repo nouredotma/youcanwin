@@ -46,7 +46,7 @@ export function ProductShowcase() {
             ))}
           </div>
 
-          <button className="bg-primary-gradient text-white px-5 py-3 text-sm font-medium rounded-md hover:opacity-90 transition-all flex items-center gap-3">
+          <button className="bg-red-500 text-white px-5 py-3 text-sm font-medium rounded-md hover:opacity-90 transition-all flex items-center gap-3">
             Planifier une démo
             <Calendar className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
