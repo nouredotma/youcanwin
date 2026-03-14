@@ -14,8 +14,8 @@ export function InfraStatsSection() {
       <div className="max-w-[90%] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-center">
         {items.map((item, i) => (
           <div key={i} className="flex flex-col items-center group">
-            <div className="bg-green-50 p-4 rounded-xl mb-4">
-              <item.Icon className="w-8 h-8 text-green-600" />
+            <div className="bg-primary/10 p-4 rounded-xl mb-4">
+              <item.Icon className="w-8 h-8 text-primary" />
             </div>
             <div className="text-xl font-semibold text-gray-900 mb-1">{item.title}</div>
             <p className="text-gray-500 text-sm font-medium">{item.sub}</p>

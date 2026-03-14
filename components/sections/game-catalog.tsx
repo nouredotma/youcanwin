@@ -58,7 +58,7 @@ export function GameCatalog() {
                 <h3 className="font-bold text-gray-900 text-xl mb-3">{game.name}</h3>
                 <p className="text-sm text-gray-500 mb-6 font-medium leading-relaxed grow">{game.desc}</p>
                 <div className="mt-auto">
-                  <a href="#" className="inline-flex items-center gap-1 text-green-600 font-extrabold text-sm hover:gap-2 transition-all">
+                  <a href="#" className="inline-flex items-center gap-1 text-primary font-extrabold text-sm hover:gap-2 transition-all">
                     Découvrir
                     <ChevronRight className="w-4 h-4" />
                   </a>

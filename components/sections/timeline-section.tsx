@@ -31,8 +31,8 @@ export function TimelineSection() {
                 </div>
                 
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-white border-2 rounded-xl flex items-center shadow-xl justify-center mb-6 group-hover:scale-110 transition-transform ${isRed ? 'border-red-100' : 'border-green-100'}`}>
-                  <step.Icon className={`w-8 h-8 ${isRed ? 'text-red-600' : 'text-green-600'}`} />
+                <div className={`w-16 h-16 bg-white border-2 rounded-xl flex items-center shadow-xl justify-center mb-6 group-hover:scale-110 transition-transform ${isRed ? 'border-red-100' : 'border-primary/20'}`}>
+                  <step.Icon className={`w-8 h-8 ${isRed ? 'text-red-600' : 'text-primary'}`} />
                 </div>
 
                 {/* Text */}

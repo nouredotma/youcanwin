@@ -84,12 +84,12 @@ export function PricingSection() {
               )}
 
               <div className="flex flex-col items-start gap-4 mb-6">
-                <div className={`shrink-0 w-14 h-14 rounded-xl flex items-center justify-center ${plan.popular ? 'bg-red-50' : 'bg-green-50'}`}>
-                  <plan.Icon className={`w-7 h-7 ${plan.popular ? 'text-red-600' : 'text-green-600'}`} />
+                <div className={`shrink-0 w-14 h-14 rounded-xl flex items-center justify-center ${plan.popular ? 'bg-red-50' : 'bg-primary/10'}`}>
+                  <plan.Icon className={`w-7 h-7 ${plan.popular ? 'text-red-600' : 'text-primary'}`} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-black leading-none mb-1">{plan.title}</h3>
-                  <p className="text-green-600 text-sm font-medium">{plan.tagline}</p>
+                  <p className="text-primary text-sm font-medium">{plan.tagline}</p>
                 </div>
               </div>
 
@@ -110,7 +110,7 @@ export function PricingSection() {
               <ul className="space-y-4 mb-10 grow">
                 {plan.features.map((feature, j) => (
                   <li key={j} className="flex items-start gap-3 text-sm font-medium text-neutral-500">
-                    <Check className={`w-4 h-4 shrink-0 mt-0.5 ${plan.popular ? 'text-red-600' : 'text-green-600'}`} />
+                    <Check className={`w-4 h-4 shrink-0 mt-0.5 ${plan.popular ? 'text-red-600' : 'text-primary'}`} />
                     {feature}
                   </li>
                 ))}
@@ -120,7 +120,7 @@ export function PricingSection() {
                 className={`w-full py-3 font-medium rounded-xl transition-all ${
                   plan.popular
                     ? 'bg-red-600 text-white hover:bg-red-700 shadow-lg shadow-red-200/30'
-                    : 'border-2 border-gray-100 text-gray-950 hover:border-green-600 hover:text-green-600 hover:bg-green-50'
+                    : 'border-2 border-gray-100 text-gray-950 hover:border-primary hover:text-primary hover:bg-primary/10'
                 }`}
               >
                 {plan.popular ? 'Planifier un démo gratuit' : 'Nous contacter'}
