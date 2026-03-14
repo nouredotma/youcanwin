@@ -28,7 +28,7 @@ export function FeatureGrid() {
     <section className="bg-gray-50 py-12 md:py-24">
       <div className="max-w-[90%] mx-auto px-4">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full mb-6 border border-green-100">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full mb-6 border border-primary/20">
             <Settings className="w-4 h-4" />
             <span className="text-sm font-medium">Backoffice tout-en-un</span>
           </div>
@@ -43,8 +43,8 @@ export function FeatureGrid() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {features.map((feature, i) => (
             <div key={i} className="bg-white p-6 rounded-xl border border-gray-300 hover:border-green-200 transition-all hover:shadow-lg hover:shadow-gray-100/50 group">
-              <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <feature.Icon className="w-6 h-6 text-green-600" />
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <feature.Icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">{feature.title}</h3>
               <p className="text-gray-500 text-sm font-medium leading-relaxed">

@@ -6,14 +6,14 @@ export function HeroSection() {
       <div className="max-w-[90%] mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="md:pt-10">
           <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4 leading-tight">
-            Transformez chaque <span className="text-green-600 underline underline-offset-8">produit</span> en expérience de jeu
+            Transformez chaque <span className="text-gradient underline underline-offset-8 decoration-primary">produit</span> en expérience de jeu
           </h1>
           <p className="text-gray-600 text-lg mb-6 max-w-lg leading-relaxed">
             YouCanWin connecte vos marques aux fans de football à travers des mécaniques de gamification innovantes. <span className="font-bold text-gray-900">Codes QR, cartes digitales, défis et récompenses.</span>
           </p>
           <div className="flex flex-wrap gap-12 mb-6">
             <div>
-              <div className="text-green-600 font-black text-3xl">500K+</div>
+              <div className="text-gradient font-black text-3xl">500K+</div>
               <p className="text-gray-500 font-medium text-sm">Interactions/mois</p>
             </div>
             <div>
@@ -21,7 +21,7 @@ export function HeroSection() {
               <p className="text-gray-500 font-medium text-sm">Marques actives</p>
             </div>
             <div>
-              <div className="text-green-600 font-black text-3xl">x3.5</div>
+              <div className="text-gradient font-black text-3xl">x3.5</div>
               <p className="text-gray-500 font-medium text-sm">ROI moyen</p>
             </div>
           </div>
@@ -94,8 +94,8 @@ export function HeroSection() {
 
           {/* Floating Cards */}
           <div className="absolute top-10 -right-4 md:-right-12 z-20 bg-white p-2 rounded-md shadow-lg flex items-center gap-4 border border-gray-100 animate-float">
-            <div className="bg-green-100 p-3 rounded-lg">
-              <Users className="w-6 h-6 text-green-600" />
+            <div className="bg-primary/10 p-3 rounded-lg">
+              <Users className="w-6 h-6 text-primary" />
             </div>
             <div>
               <div className="font-bold text-gray-900 leading-tight">Activité Users</div>

@@ -20,8 +20,8 @@ export function ProductShowcase() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         </div>
         <div>
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full mb-4 border border-green-100">
-            <Lightbulb className="w-4 h-4 fill-green-600/10" />
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full mb-4 border border-primary/20">
+            <Lightbulb className="w-4 h-4 fill-primary/10" />
             <span className="text-sm font-medium">Solutions complètes</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-black mb-2 leading-tight tracking-tight">
@@ -35,8 +35,8 @@ export function ProductShowcase() {
           <div className="grid grid-cols-1 gap-3 mb-10">
             {points.map((point, i) => (
               <div key={i} className="flex gap-2 items-start">
-                <div className="shrink-0 w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center">
-                  <point.Icon className="w-6 h-6 text-green-600" />
+                <div className="shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <point.Icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-bold text-gray-900 text-base">{point.title}</div>
