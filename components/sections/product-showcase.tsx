@@ -1,32 +1,49 @@
+import { Lightbulb, Check, Calendar } from "lucide-react";
+
 export function ProductShowcase() {
+  const points = [
+    { title: "Collectioner digitales", desc: "Créez des albums de stickers numériques" },
+    { title: "Gamification interactive", desc: "Engagez vos clients avec des mini-jeux" },
+    { title: "Analytics avancées", desc: "Suivez les performances en temps réel" },
+    { title: "Engagement direct", desc: "Communiquez directement avec vos fans" },
+  ];
+
   return (
-    <section className="bg-gray-50 py-12 md:py-20">
-      <div className="max-w-[90%] mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-        <div className="bg-gray-300 rounded-lg h-64 md:h-80"></div>
+    <section className="bg-gray-50 py-12 md:py-24">
+      <div className="max-w-[90%] mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+        <div className="bg-gray-200 rounded-3xl h-[400px] md:h-[500px] shadow-inner border border-gray-100 flex items-center justify-center text-gray-400 font-bold uppercase tracking-widest">
+          Product Image / Demo
+        </div>
         <div>
-          <p className="text-green-600 font-medium text-sm mb-2">Solutions</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="inline-flex items-center gap-2 bg-green-50 text-green-600 px-4 py-2 rounded-full mb-6 border border-green-100">
+            <Lightbulb className="w-4 h-4 fill-green-600/10" />
+            <span className="text-sm font-bold uppercase tracking-wider">Solutions</span>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             La tendance du jeu digital de votre marque
           </h2>
-          <p className="text-gray-600 mb-6">
-            Une approche qui offre à votre marque une expérience immersive, interactive et engageante que vos clients vont adorer.
+          <p className="text-gray-600 text-lg mb-10 leading-relaxed">
+            <span className="font-bold text-green-600">You can win</span> transformez vos produits en expériences interactives. 
+            Chaque achat devient une opportunité d'engagement avec vos consommateurs.
           </p>
-          <ul className="space-y-3 mb-6">
-            <li className="flex items-start gap-3">
-              <span className="text-green-600 mt-1">✓</span>
-              <span className="text-gray-700">Collectioner digitales</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-green-600 mt-1">✓</span>
-              <span className="text-gray-700">Gamification interactive</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-green-600 mt-1">✓</span>
-              <span className="text-gray-700">Analytics avancées</span>
-            </li>
-          </ul>
-          <button className="bg-red-600 text-white px-6 py-3 font-medium">
+          
+          <div className="grid sm:grid-cols-2 gap-6 mb-10">
+            {points.map((point, i) => (
+              <div key={i} className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center border border-green-100">
+                  <Check className="w-5 h-5 text-green-600" />
+                </div>
+                <div>
+                  <div className="font-bold text-gray-900 text-sm">{point.title}</div>
+                  <p className="text-xs text-gray-500 mt-1">{point.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button className="bg-red-600 text-white px-8 py-4 font-bold rounded-md hover:bg-red-700 transition-all flex items-center gap-3 shadow-lg shadow-red-100">
             Discover more
+            <Calendar className="w-5 h-5" />
           </button>
         </div>
       </div>
