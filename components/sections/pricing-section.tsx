@@ -71,7 +71,7 @@ export function PricingSection() {
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`relative bg-white p-8 rounded-2xl border transition-all duration-300 ${
+              className={`relative bg-white p-8 rounded-xl border transition-all duration-300 ${
                 plan.popular
                   ? 'border-red-600 shadow-xl shadow-gray-200/50'
                   : 'border-gray-200 hover:shadow-lg'
@@ -84,7 +84,7 @@ export function PricingSection() {
               )}
 
               <div className="flex flex-col items-start gap-4 mb-6">
-                <div className={`shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center ${plan.popular ? 'bg-red-50' : 'bg-green-50'}`}>
+                <div className={`shrink-0 w-14 h-14 rounded-xl flex items-center justify-center ${plan.popular ? 'bg-red-50' : 'bg-green-50'}`}>
                   <plan.Icon className={`w-7 h-7 ${plan.popular ? 'text-red-600' : 'text-green-600'}`} />
                 </div>
                 <div>

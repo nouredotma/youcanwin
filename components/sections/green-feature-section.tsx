@@ -24,7 +24,7 @@ export function GreenFeatureSection() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, i) => (
-            <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-white hover:bg-white/15 transition-all flex flex-col items-center text-center">
+            <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl text-white hover:bg-white/15 transition-all flex flex-col items-center text-center">
                 <div className="shrink-0 w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center mb-4">
                 <feature.Icon className="w-7 h-7 text-white/90" />
               </div>

@@ -26,7 +26,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-500 mb-4 font-medium leading-relaxed">
-              Plateforme de jeu digitale engagée pour votre communauté, le football et services.
+              Plateforme de jeux digitaux pour engager vos communautés autour du football. Un service d'Agency.Africa.
             </p>
             <div className="flex gap-3">
               {socialIcons.map(({ Icon, href }, i) => (

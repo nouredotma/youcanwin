@@ -1,16 +1,16 @@
-import { ShoppingBag, QrCode, Smartphone, LayoutGrid, Gift } from "lucide-react";
+import { ShoppingCart, QrCode, Smartphone, Puzzle, Gift } from "lucide-react";
 
 export function TimelineSection() {
   const steps = [
-    { title: "Achat produit", desc: "Le client achète votre produit en magasin", Icon: ShoppingBag },
+    { title: "Achat produit", desc: "Le client achète votre produit en magasin", Icon: ShoppingCart },
     { title: "Scan QR Code", desc: "Il scanne le code sur l'emballage", Icon: QrCode },
     { title: "Déblocage carte", desc: "Une carte digitale est débloquée", Icon: Smartphone },
-    { title: "Collection", desc: "Il complète sa collection", Icon: LayoutGrid },
+    { title: "Collection", desc: "Il complète sa collection", Icon: Puzzle },
     { title: "Récompense", desc: "Participe au tirage", Icon: Gift },
   ];
 
   return (
-    <section className="bg-white py-12 md:py-24">
+    <section className="bg-gray-50 py-12 md:py-24">
       <div className="max-w-[90%] mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -31,7 +31,7 @@ export function TimelineSection() {
                 </div>
                 
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-white border-2 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${isRed ? 'border-red-100' : 'border-green-100'}`}>
+                <div className={`w-16 h-16 bg-white border-2 rounded-xl flex items-center shadow-xl justify-center mb-6 group-hover:scale-110 transition-transform ${isRed ? 'border-red-100' : 'border-green-100'}`}>
                   <step.Icon className={`w-8 h-8 ${isRed ? 'text-red-600' : 'text-green-600'}`} />
                 </div>
 
